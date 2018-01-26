@@ -1,0 +1,37 @@
+# BASH ALIASES FOR WEB SERVER
+alias ..="cd .."
+alias apache_restart="sudo systemctl restart httpd.service"
+alias home="cd /var/www"
+alias ll='ls -alHFh --no-group --color'
+alias logs="find /var/log -type f -exec file {} \; | grep 'text' | cut -d' ' -f1 | sed -e's/:$//g' | grep -v '[0-9]$' | xargs tail -f"
+alias mkdir="mkdir -pv"
+alias mysql_restart="sudo systemctl restart mysqld.service"
+alias syslog="tail -f /var/log/syslog"
+alias update_vagrant_user="cp /home/etc/bash/.bashrc /home/vagrant/.bashrc && source /home/vagrant/.bashrc ;"
+
+# DEVELOPMENT ONLY
+function export_db () {
+  PROJECT=${1:-"mysql_export"}
+  TIMESTAMP=$(date -d today +%y.%m.%d.%H%I%M%S)
+  DB_USER="vagrant"
+  DB_PASS=SECRET
+  FILE_NAME=$PROJECT.$TIMESTAMP.sql
+  FILE_PATH=/home/vagrant/etc/migrations
+  mysqldump -u$DB_USER -p$DBPASS $PROJECT > "$FILE_PATH/$FILE_NAME"
+  exit 0
+}
+ 
+# DEVELOPMENT ONLY
+function import_db () {
+  FILE_NAME=$1
+  DB_USER="vagrant"
+  DB_PASS=SECRET
+  
+  if [ $FILE_NAME = "" ] 
+  then
+    echo "Error: Filename missing"
+    exit 1
+  else 
+    mysql -u$DB_USER -p$DB_PASS < "/home/vagrant/etc/migrations/$FILE_NAME"
+  fi
+} 

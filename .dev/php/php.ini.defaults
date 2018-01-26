@@ -1,0 +1,293 @@
+[PHP]
+allow_url_fopen = On
+allow_url_include = Off
+auto_append_file =
+auto_globals_jit = On
+auto_prepend_file =
+default_charset = "UTF-8"
+default_mimetype = "text/html"
+default_socket_timeout = 60
+disable_classes =
+disable_functions =
+display_errors = On
+display_startup_errors = Off
+doc_root =
+enable_dl = Off
+engine = On
+error_reporting = E_ALL & ~E_DEPRECATED & ~E_STRICT
+expose_php = On
+file_uploads = On
+html_errors = On
+ignore_repeated_errors = Off
+ignore_repeated_source = Off
+implicit_flush = Off
+log_errors = On
+log_errors_max_len = 1024
+max_execution_time = 30
+max_file_uploads = 20
+max_input_time = 60
+memory_limit = 2048M
+output_buffering = 4096
+post_max_size = 8M
+precision = 14
+register_argc_argv = Off
+report_memleaks = On
+request_order = "GP"
+serialize_precision = 17
+short_open_tag = Off
+track_errors = Off
+unserialize_callback_func =
+upload_max_filesize = 256M
+user_dir =
+variables_order = "GPCS"
+zend.enable_gc = On
+zlib.output_compression = Off
+;arg_separator.input = ";&"
+;arg_separator.output = "&amp;"
+;auto_detect_line_endings = Off
+;cgi.fix_pathinfo=1
+;cgi.force_redirect = 1
+;cgi.nph = 1
+;cgi.redirect_status_env =
+;cgi.rfc2616_headers = 0
+;docref_ext = .html
+;docref_root = "/phpmanual/"
+;enable_post_data_reading = Off
+;error_append_string = "</span>"
+;error_log = syslog
+;error_prepend_string = "<span style='color: #ff0000'>"
+;fastcgi.impersonate = 1
+;fastcgi.logging = 0
+;highlight.comment = #FF9900
+;highlight.default = #0000BB
+;highlight.html    = #000000
+;highlight.keyword = #007700
+;highlight.string  = #DD0000
+;ignore_user_abort = On
+;include_path = ".;c:\php\includes"
+;include_path = ".:/php/includes"
+;input_encoding =
+;internal_encoding =
+;max_input_nesting_level = 64
+;open_basedir =
+;output_encoding =
+;realpath_cache_size = 16k
+;realpath_cache_ttl = 120
+;report_zend_debug = 0
+;upload_tmp_dir =
+;user_agent="PHP"
+;xmlrpc_error_number = 0
+;xmlrpc_errors = 0
+;zend.multibyte = Off
+;zend.script_encoding =
+;zlib.output_compression_level = -1
+;zlib.output_handler =
+
+[CLI Server]
+cli_server.color = On
+
+[Date]
+;date.timezone =
+;date.default_latitude = 31.7667
+;date.default_longitude = 35.2333
+;date.sunrise_zenith = 90.583333
+;date.sunset_zenith = 90.583333
+
+[filter]
+;filter.default = unsafe_raw
+;filter.default_flags =
+
+[iconv]
+;iconv.input_encoding =
+;iconv.internal_encoding =
+;iconv.output_encoding =
+
+[intl]
+;intl.error_level = E_WARNING
+
+[sqlite]
+;sqlite.assoc_case = 0
+
+[sqlite3]
+;sqlite3.extension_dir =
+
+[Pcre]
+;pcre.backtrack_limit=100000
+;pcre.recursion_limit=100000
+pcre.jit=0
+
+[Pdo]
+;pdo_odbc.connection_pooling=strict
+;pdo_odbc.db2_instance_name
+
+[Pdo_mysql]
+pdo_mysql.cache_size = 2000
+pdo_mysql.default_socket=
+
+[Phar]
+;phar.readonly = On
+;phar.require_hash = On
+;phar.cache_list =
+
+[mail function]
+mail.add_x_header = On
+sendmail_path = /usr/sbin/sendmail -t -i
+;mail.force_extra_parameters =
+;mail.log =
+;mail.log = syslog
+
+[SQL]
+sql.safe_mode = Off
+
+[ODBC]
+odbc.allow_persistent = On
+odbc.check_persistent = On
+odbc.max_persistent = -1
+odbc.max_links = -1
+odbc.defaultlrl = 4096
+odbc.defaultbinmode = 1
+;birdstep.max_links = -1
+;odbc.default_db    =  Not yet implemented
+;odbc.default_user  =  Not yet implemented
+;odbc.default_pw    =  Not yet implemented
+;odbc.default_cursortype
+
+[Interbase]
+ibase.allow_persistent = 1
+ibase.dateformat = "%Y-%m-%d"
+ibase.max_links = -1
+ibase.max_persistent = -1
+ibase.timeformat = "%H:%M:%S"
+ibase.timestampformat = "%Y-%m-%d %H:%M:%S"
+;ibase.default_db =
+;ibase.default_user =
+;ibase.default_password =
+;ibase.default_charset =
+
+[MySQLi]
+mysqli.max_persistent = -1
+mysqli.allow_persistent = On
+mysqli.max_links = -1
+mysqli.cache_size = 2000
+mysqli.default_port = 3306
+mysqli.default_socket =
+mysqli.default_host =
+mysqli.default_user =
+mysqli.default_pw =
+mysqli.reconnect = Off
+;mysqli.allow_local_infile = On
+
+[mysqlnd]
+mysqlnd.collect_statistics = On
+mysqlnd.collect_memory_statistics = Off
+;mysqlnd.net_cmd_buffer_size = 2048
+;mysqlnd.net_read_buffer_size = 32768
+
+[PostgreSQL]
+pgsql.allow_persistent = On
+pgsql.auto_reset_persistent = Off
+pgsql.max_persistent = -1
+pgsql.max_links = -1
+pgsql.ignore_notice = 0
+pgsql.log_notice = 0
+
+[bcmath]
+bcmath.scale = 0
+
+[browscap]
+;browscap = extra/browscap.ini
+
+[Session]
+session.save_handler = files
+;session.save_path = "/tmp"
+session.use_strict_mode = 0
+session.use_cookies = 1
+;session.cookie_secure =
+session.use_only_cookies = 1
+session.name = PHPSESSID
+session.auto_start = 0
+session.cookie_lifetime = 0
+session.cookie_path = /
+session.cookie_domain =
+session.cookie_httponly =
+session.serialize_handler = php
+session.gc_probability = 1
+session.gc_divisor = 1000
+session.gc_maxlifetime = 1440
+session.referer_check =
+;session.entropy_length = 32
+;session.entropy_file = /dev/urandom
+session.cache_limiter = nocache
+session.cache_expire = 180
+session.use_trans_sid = 0
+session.hash_function = 0
+session.hash_bits_per_character = 5
+url_rewriter.tags = "a=href,area=href,frame=src,input=src,form=fakeentry"
+;session.upload_progress.enabled = On
+;session.upload_progress.cleanup = On
+;session.upload_progress.prefix = "upload_progress_"
+;session.upload_progress.name = "PHP_SESSION_UPLOAD_PROGRESS"
+;session.upload_progress.freq =  "1%"
+;session.upload_progress.min_freq = "1"
+
+[Assertion]
+zend.assertions = -1
+;assert.active = On
+;assert.exception = On
+;assert.warning = On
+;assert.bail = Off
+;assert.callback = 0
+;assert.quiet_eval = 0
+
+[mbstring]
+;mbstring.language = Japanese
+;mbstring.internal_encoding =
+;mbstring.http_input =
+;mbstring.http_output =
+;mbstring.encoding_translation = Off
+;mbstring.detect_order = auto
+;mbstring.substitute_character = none
+;mbstring.func_overload = 0
+;mbstring.strict_detection = On
+;mbstring.http_output_conv_mimetype=
+
+[gd]
+;gd.jpeg_ignore_warning = 0
+
+[exif]
+;exif.encode_unicode = ISO-8859-15
+;exif.decode_unicode_motorola = UCS-2BE
+;exif.decode_unicode_intel    = UCS-2LE
+;exif.encode_jis =
+;exif.decode_jis_motorola = JIS
+;exif.decode_jis_intel    = JIS
+
+[Tidy]
+;tidy.default_config = /usr/local/lib/php/default.tcfg
+tidy.clean_output = Off
+
+[soap]
+soap.wsdl_cache_enabled=1
+soap.wsdl_cache_dir="/tmp"
+soap.wsdl_cache_ttl=86400
+soap.wsdl_cache_limit = 5
+
+[sysvshm]
+;sysvshm.init_mem = 10000
+
+[ldap]
+ldap.max_links = -1
+
+[mcrypt]
+;mcrypt.algorithms_dir=
+;mcrypt.modes_dir=
+
+[dba]
+;dba.default_handler=
+
+[curl]
+;curl.cainfo =
+
+[openssl]
+;openssl.cafile=
+;openssl.capath=

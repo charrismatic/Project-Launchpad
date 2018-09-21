@@ -45,7 +45,8 @@ Please make sure to update tests as appropriate.
 
 [MIT](https://choosealicense.com/licenses/mit/)
 
-Pick a license https://blog.codinghorror.com/pick-a-license-any-license/
+
+Pick a license https://choosealicense.com/
 
 
 --- 

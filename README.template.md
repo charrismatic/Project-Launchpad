@@ -8,9 +8,8 @@ Project description line
 Key features and options here
 
 
-## Setup
 
-Install### Prerequisites
+### Prerequisites
 - A
 - B 
 
